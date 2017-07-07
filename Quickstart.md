@@ -15,13 +15,13 @@ wget -O bootstrap.jar http://get.ultramine.ru/bootstrap.jar && java -jar bootstr
 ```shell
 wget -O bootstrap.jar http://get.ultramine.ru/bootstrap.jar && java -jar bootstrap.jar --install --forge
 ```
-Данный параметр изменяет скрипт запуска, устанавливая системные свойства `org.ultramine.dirs.vanilla=.` и `org.ultramine.dirs.worlds=.`, а также изменяет [server.yml](server.yml), импортируя опции из server.properties и устанавливая свойство `splitWorldDirs: false` (не разделять миры по директориям).
+Данный параметр изменяет скрипт запуска, устанавливая системные свойства `org.ultramine.dirs.vanilla=.` и `org.ultramine.dirs.worlds=.`, а также изменяет [server.yml](server.yml.md), импортируя опции из server.properties и устанавливая свойство `splitWorldDirs: false` (не разделять миры по директориям).
 
 **Внимание, не использовать в продкшене!** Режим неразделенных миров (`splitWorldDirs: false`) плохо поддерживается и создан только для быстрого тестирования. По завершению тестирования установите UltraMine Core обычным способом, вручную переместите файлы в новые директории и разделите миры.
 
 # Misc
-* Командой `/reloadcfg` можно перезагружать [server.yml](server.yml) и [worlds.yml](worlds.yml) без рестарта, в том числе нормально обрабатывается добавление миров.
+* Командой `/reloadcfg` можно перезагружать [server.yml](server.yml.md) и [worlds.yml](worlds.yml.md) без рестарта, в том числе нормально обрабатывается добавление миров.
 * Список команд можно посмотреть командой `/help all`, причем если вы введете это в игре, у вас не хватит истории чата для просмотра всего списка, так что лучше делать это в консоли, либо листать список по страницам.
 * Чтобы выдать себе права на только что созданном сервере, используйте обе команды: `/op USERNAME` и `/puser USERNAME group admin`.
-* Чтобы создать пустой мир, задайте `-10` провайдер в [worlds.yml](worlds.yml)
+* Чтобы создать пустой мир, задайте `-10` провайдер в [worlds.yml](worlds.yml.md)
 * `/spawn` - это не команда, это `fastwarp`. Командой `/fastwarp` можно превратить любой варп в команду, так же как `/spawn`
